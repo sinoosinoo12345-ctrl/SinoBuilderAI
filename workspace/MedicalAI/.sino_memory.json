@@ -1,0 +1,79 @@
+{
+  "project": "MedicalAI",
+  "description": "تطبيق مستشفى ذكي بالذكاء الاصطناعي مع مواعيد وملفات مرضى",
+  "created": "2026-07-19T20:47:22.920402",
+  "changes": [
+    {
+      "change": "Detected domain: medical",
+      "time": "2026-07-19T20:47:22.921529"
+    },
+    {
+      "change": "Use Clean Architecture",
+      "time": "2026-07-19T20:47:22.922081"
+    },
+    {
+      "change": "Generate scalable modular system",
+      "time": "2026-07-19T20:47:22.922465"
+    },
+    {
+      "change": "Integrate AI intelligence layer",
+      "time": "2026-07-19T20:47:22.922807"
+    },
+    {
+      "change": "Generated README.md",
+      "time": "2026-07-19T20:47:22.923891"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T20:47:22.925490"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T20:47:22.926994"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T20:47:22.928420"
+    },
+    {
+      "change": "Generated config/settings.py",
+      "time": "2026-07-19T20:47:22.929836"
+    },
+    {
+      "change": "Generated ai/core_engine.py",
+      "time": "2026-07-19T20:47:22.931391"
+    },
+    {
+      "change": "Generated backend/api.py",
+      "time": "2026-07-19T20:47:22.932856"
+    },
+    {
+      "change": "Generated database/database.py",
+      "time": "2026-07-19T20:47:22.934351"
+    },
+    {
+      "change": "Generated frontend/lib/screens/home.dart",
+      "time": "2026-07-19T20:47:22.935486"
+    },
+    {
+      "change": "Generated backend/auth.py",
+      "time": "2026-07-19T20:47:22.939042"
+    },
+    {
+      "change": "Generated backend/patients.py",
+      "time": "2026-07-19T20:47:22.941104"
+    },
+    {
+      "change": "Generated backend/appointments.py",
+      "time": "2026-07-19T20:47:22.942856"
+    },
+    {
+      "change": "Generated backend/medical_records.py",
+      "time": "2026-07-19T20:47:22.944743"
+    },
+    {
+      "change": "Generated backend/reports.py",
+      "time": "2026-07-19T20:47:22.946350"
+    }
+  ]
+}

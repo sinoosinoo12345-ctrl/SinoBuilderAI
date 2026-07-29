@@ -1,0 +1,12 @@
+{
+    "engine": "Sino Builder AI",
+    "version": "7.0",
+    "status": "ready",
+    "targets": [
+        "Android APK",
+        "Web",
+        "Windows",
+        "Linux",
+        "macOS"
+    ]
+}

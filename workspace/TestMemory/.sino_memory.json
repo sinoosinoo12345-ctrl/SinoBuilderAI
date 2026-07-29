@@ -1,0 +1,63 @@
+{
+  "project": "TestMemory",
+  "description": "تطبيق إدارة مطعم مع طلبات وفواتير",
+  "created": "2026-07-19T09:28:25.233018",
+  "changes": [
+    {
+      "change": "Agent completed: Planner",
+      "time": "2026-07-19T09:28:25.235775"
+    },
+    {
+      "change": "Agent completed: ProjectManager",
+      "time": "2026-07-19T09:28:25.236365"
+    },
+    {
+      "change": "Agent completed: Architect",
+      "time": "2026-07-19T09:28:25.236942"
+    },
+    {
+      "change": "Agent completed: Backend",
+      "time": "2026-07-19T09:28:25.240280"
+    },
+    {
+      "change": "Agent completed: Frontend",
+      "time": "2026-07-19T09:28:25.242284"
+    },
+    {
+      "change": "Agent completed: Database",
+      "time": "2026-07-19T09:28:25.242877"
+    },
+    {
+      "change": "Agent completed: Security",
+      "time": "2026-07-19T09:28:25.243306"
+    },
+    {
+      "change": "Agent completed: Testing",
+      "time": "2026-07-19T09:28:25.244922"
+    },
+    {
+      "change": "Agent completed: Reviewer",
+      "time": "2026-07-19T09:28:25.245765"
+    },
+    {
+      "change": "Agent completed: Refactor",
+      "time": "2026-07-19T09:28:25.246364"
+    },
+    {
+      "change": "Agent completed: Documentation",
+      "time": "2026-07-19T09:28:25.246928"
+    },
+    {
+      "change": "Agent completed: Deployment",
+      "time": "2026-07-19T09:28:25.247537"
+    },
+    {
+      "change": "Agent completed: Memory",
+      "time": "2026-07-19T09:28:25.248158"
+    },
+    {
+      "change": "Agent completed: DevOps",
+      "time": "2026-07-19T09:28:25.249355"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "project": "TestMemory",
+  "description": "تطبيق تجريبي",
+  "created": "2026-07-18T23:22:01.492047",
+  "changes": [
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-18T23:22:01.494486"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-18T23:22:01.497737"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-18T23:22:01.505028"
+    },
+    {
+      "change": "Generated README.md",
+      "time": "2026-07-18T23:22:01.508406"
+    },
+    {
+      "change": "Update request: إضافة نظام دفع إلكتروني",
+      "time": "2026-07-18T23:32:56.784494"
+    },
+    {
+      "change": "Update request: إضافة نظام دفع إلكتروني",
+      "time": "2026-07-18T23:37:31.007057"
+    },
+    {
+      "change": "Updated files for: إضافة نظام دفع إلكتروني",
+      "time": "2026-07-18T23:50:43.810847"
+    },
+    {
+      "change": "Updated files for: إضافة نظام دفع إلكتروني",
+      "time": "2026-07-18T23:51:52.857332"
+    }
+  ]
+}

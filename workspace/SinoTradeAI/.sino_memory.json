@@ -1,0 +1,39 @@
+{
+  "project": "SinoTradeAI",
+  "description": "منصة تداول ذكاء اصطناعي مثل MT5 مع شارت وتحليل AI",
+  "created": "2026-07-19T17:17:36.586598",
+  "changes": [
+    {
+      "change": "Use AI assisted analysis",
+      "time": "2026-07-19T17:17:36.596455"
+    },
+    {
+      "change": "Use real time market processing",
+      "time": "2026-07-19T17:17:36.597055"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T17:17:36.598927"
+    },
+    {
+      "change": "Generated backend/market_data.py",
+      "time": "2026-07-19T17:17:36.600903"
+    },
+    {
+      "change": "Generated ai/trading_agent.py",
+      "time": "2026-07-19T17:17:36.602406"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T17:17:36.603865"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T17:17:36.604937"
+    },
+    {
+      "change": "Generated frontend/lib/screens/chart.dart",
+      "time": "2026-07-19T17:17:36.605683"
+    }
+  ]
+}

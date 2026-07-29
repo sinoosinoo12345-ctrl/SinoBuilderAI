@@ -1,0 +1,123 @@
+
+            manifest.add(
+                "frontend/lib/screens/home.dart",
+                "Main application screen",
+            )
+
+
+        # =====================
+        # Dynamic Modules
+        # =====================
+
+        for module in architecture.modules:
+
+
+            name = module.lower()
+
+
+            if name in (
+                "authentication",
+                "auth",
+                "users",
+            ):
+
+                manifest.add(
+                    "backend/auth.py",
+                    "Authentication system",
+                )
+
+
+            elif name in (
+                "market_data",
+                "data",
+            ):
+
+                manifest.add(
+                    "backend/data_service.py",
+                    "Data processing service",
+                )
+
+
+            elif name in (
+                "charts",
+                "chart",
+            ):
+                manifest.add(
+                    "frontend/lib/screens/chart.dart",
+                    "Professional trading chart",
+                )
+
+
+            elif name in (
+                "portfolio",
+           ):
+
+                manifest.add(
+                    "frontend/lib/screens/portfolio.dart",
+                    "Trading portfolio screen",
+                )
+
+
+            elif name in (
+                "orders",
+           ):
+
+               manifest.add(
+                   "backend/orders.py",
+                   "Trading orders management",
+                )
+
+
+            elif name in (
+                "payments",
+                "billing",
+           ):
+
+                manifest.add(
+                    "backend/payment.py",
+                    "Payment processing",
+                )
+
+            elif name in (
+                "signals",
+           ):
+
+                 manifest.add(
+                    "frontend/screens/home.py",
+                    "Main application screen",
+                )
+                    "backend/signals.py",
+                    "AI trading signals",
+                )
+
+
+            elif name in (
+                "risk_management",
+                "risk",
+           ):
+
+                manifest.add(
+                    "backend/risk_management.py",
+                    "Trading risk management",
+                )
+
+
+            elif name in (
+                "trading_agent",
+                "ai",
+           ):
+
+                manifest.add(
+                    "ai/trading_agent.py",
+                    "AI trading analysis engine",
+                )
+
+            else:
+
+                manifest.add(
+                    f"backend/{name}.py",
+                    f"{module} service module",
+                )
+
+
+        return manifest

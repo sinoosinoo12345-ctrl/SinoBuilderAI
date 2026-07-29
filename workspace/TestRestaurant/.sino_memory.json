@@ -1,0 +1,43 @@
+{
+  "project": "TestRestaurant",
+  "description": "تطبيق إدارة مطعم مع طلبات وفواتير",
+  "created": "2026-07-19T11:24:06.497167",
+  "changes": [
+    {
+      "change": "Use REST API architecture",
+      "time": "2026-07-19T11:24:06.499880"
+    },
+    {
+      "change": "Separate business logic from database",
+      "time": "2026-07-19T11:24:06.501257"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T11:24:06.504685"
+    },
+    {
+      "change": "Generated backend/orders.py",
+      "time": "2026-07-19T11:24:06.507266"
+    },
+    {
+      "change": "Generated backend/payments.py",
+      "time": "2026-07-19T11:24:06.509366"
+    },
+    {
+      "change": "Generated database/database.py",
+      "time": "2026-07-19T11:24:06.511265"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T11:24:06.516676"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T11:24:06.518666"
+    },
+    {
+      "change": "Generated frontend/lib/screens/orders.dart",
+      "time": "2026-07-19T11:24:06.520129"
+    }
+  ]
+}

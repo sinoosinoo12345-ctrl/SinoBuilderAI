@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sino Builder AI</title>
+
+<style>
+body{
+margin:0;
+background:#030712;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+header{
+height:70px;
+background:#111827;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:26px;
+font-weight:bold;
+}
+
+.page{
+padding:20px;
+margin-bottom:80px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#1f2937;
+border:none;
+border-radius:12px;
+color:white;
+}
+
+textarea{
+height:140px;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#06b6d4;
+color:white;
+font-size:18px;
+font-weight:bold;
+}
+
+pre{
+background:#111827;
+padding:10px;
+border-radius:12px;
+height:220px;
+overflow:auto;
+white-space:pre-wrap;
+}
+
+.bottom{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:70px;
+background:#111827;
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+
+.nav{
+text-align:center;
+font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+🐉 Sino Builder AI
+</header>
+
+<div class="page">
+
+<h2>🚀 Build Project</h2>
+
+<input
+id="project"
+placeholder="اسم المشروع">
+
+<textarea
+id="idea"
+placeholder="اكتب وصف المشروع"></textarea>
+
+<button onclick="buildProject()">
+🚀 Build Project
+</button>
+
+<pre id="log">جاهز...</pre>
+
+</div>
+
+<div class="bottom">
+
+<div class="nav">🏠<br>Home</div>
+
+<div class="nav">🤖<br>Sino</div>
+
+<div class="nav">⚡<br>Build</div>
+
+<div class="nav">📂<br>Projects</div>
+
+<div class="nav">⚙️<br>Settings</div>
+
+</div>
+
+<script src="src/app.js"></script>
+
+</body>
+</html>

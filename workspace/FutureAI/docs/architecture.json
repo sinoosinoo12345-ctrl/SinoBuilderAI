@@ -1,0 +1,24 @@
+{
+    "frontend": [
+        "assets",
+        "components",
+        "pages",
+        "services"
+    ],
+    "backend": [
+        "api",
+        "core",
+        "models",
+        "services"
+    ],
+    "database": [
+        "models",
+        "migrations"
+    ],
+    "ai": [
+        "agents",
+        "core"
+    ],
+    "config": [],
+    "docs": []
+}

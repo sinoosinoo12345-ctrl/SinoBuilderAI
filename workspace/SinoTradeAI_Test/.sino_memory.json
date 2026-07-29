@@ -1,0 +1,83 @@
+{
+  "project": "SinoTradeAI",
+  "description": "منصة تداول ذكاء اصطناعي مثل MT5 مع شارت ومحفظة وإدارة مخاطر",
+  "created": "2026-07-19T23:44:53.877329",
+  "changes": [
+    {
+      "change": "Detected domain: trading",
+      "time": "2026-07-19T23:44:53.880650"
+    },
+    {
+      "change": "Use Clean Architecture",
+      "time": "2026-07-19T23:44:53.881466"
+    },
+    {
+      "change": "Generate scalable modular system",
+      "time": "2026-07-19T23:44:53.881894"
+    },
+    {
+      "change": "Integrate AI intelligence layer",
+      "time": "2026-07-19T23:44:53.882254"
+    },
+    {
+      "change": "Generated README.md",
+      "time": "2026-07-19T23:44:53.884606"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T23:44:53.888056"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T23:44:53.891106"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T23:44:53.893580"
+    },
+    {
+      "change": "Generated config/settings.py",
+      "time": "2026-07-19T23:44:53.896843"
+    },
+    {
+      "change": "Generated ai/core_engine.py",
+      "time": "2026-07-19T23:44:53.900205"
+    },
+    {
+      "change": "Generated backend/api.py",
+      "time": "2026-07-19T23:44:53.904899"
+    },
+    {
+      "change": "Generated database/database.py",
+      "time": "2026-07-19T23:44:53.907756"
+    },
+    {
+      "change": "Generated frontend/lib/screens/home.dart",
+      "time": "2026-07-19T23:44:53.910087"
+    },
+    {
+      "change": "Generated backend/auth.py",
+      "time": "2026-07-19T23:44:53.912529"
+    },
+    {
+      "change": "Generated backend/data_service.py",
+      "time": "2026-07-19T23:44:53.914987"
+    },
+    {
+      "change": "Generated frontend/lib/screens/chart.dart",
+      "time": "2026-07-19T23:44:53.916147"
+    },
+    {
+      "change": "Generated frontend/lib/screens/portfolio.dart",
+      "time": "2026-07-19T23:44:53.917318"
+    },
+    {
+      "change": "Generated backend/signals.py",
+      "time": "2026-07-19T23:44:53.919882"
+    },
+    {
+      "change": "Generated backend/risk_management.py",
+      "time": "2026-07-19T23:44:53.922494"
+    }
+  ]
+}

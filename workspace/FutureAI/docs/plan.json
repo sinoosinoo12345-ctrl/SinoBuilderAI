@@ -1,0 +1,16 @@
+{
+    "project": "FutureAI",
+    "description": "AI Platform",
+    "goals": [
+        "Analyze idea",
+        "Create architecture",
+        "Generate UI",
+        "Generate Backend",
+        "Generate Database",
+        "Generate AI Modules",
+        "Security Review",
+        "Testing",
+        "Release"
+    ],
+    "status": "planned"
+}

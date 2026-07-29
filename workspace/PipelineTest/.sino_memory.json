@@ -1,0 +1,39 @@
+{
+  "project": "PipelineTest",
+  "description": "تطبيق تداول بالذكاء الاصطناعي",
+  "created": "2026-07-19T17:14:08.034700",
+  "changes": [
+    {
+      "change": "Use AI assisted analysis",
+      "time": "2026-07-19T17:14:08.038058"
+    },
+    {
+      "change": "Use real time market processing",
+      "time": "2026-07-19T17:14:08.038776"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T17:14:08.040834"
+    },
+    {
+      "change": "Generated backend/market_data.py",
+      "time": "2026-07-19T17:14:08.042596"
+    },
+    {
+      "change": "Generated ai/trading_agent.py",
+      "time": "2026-07-19T17:14:08.044298"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T17:14:08.045913"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T17:14:08.047612"
+    },
+    {
+      "change": "Generated frontend/lib/screens/chart.dart",
+      "time": "2026-07-19T17:14:08.049008"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "project": "FinalTest",
+  "description": "متجر الكتروني بالذكاء الاصطناعي",
+  "created": "2026-07-19T21:18:14.187911",
+  "changes": [
+    {
+      "change": "Detected domain: shop",
+      "time": "2026-07-19T21:18:14.189106"
+    },
+    {
+      "change": "Use Clean Architecture",
+      "time": "2026-07-19T21:18:14.189782"
+    },
+    {
+      "change": "Generate scalable modular system",
+      "time": "2026-07-19T21:18:14.190470"
+    },
+    {
+      "change": "Integrate AI intelligence layer",
+      "time": "2026-07-19T21:18:14.191392"
+    },
+    {
+      "change": "Generated README.md",
+      "time": "2026-07-19T21:18:14.193082"
+    },
+    {
+      "change": "Generated backend/main.py",
+      "time": "2026-07-19T21:18:14.195247"
+    },
+    {
+      "change": "Generated database/models.py",
+      "time": "2026-07-19T21:18:14.197359"
+    },
+    {
+      "change": "Generated frontend/lib/main.dart",
+      "time": "2026-07-19T21:18:14.198737"
+    },
+    {
+      "change": "Generated config/settings.py",
+      "time": "2026-07-19T21:18:14.200682"
+    },
+    {
+      "change": "Generated ai/core_engine.py",
+      "time": "2026-07-19T21:18:14.203358"
+    },
+    {
+      "change": "Generated backend/api.py",
+      "time": "2026-07-19T21:18:14.205510"
+    },
+    {
+      "change": "Generated database/database.py",
+      "time": "2026-07-19T21:18:14.207765"
+    },
+    {
+      "change": "Generated frontend/lib/screens/home.dart",
+      "time": "2026-07-19T21:18:14.209194"
+    },
+    {
+      "change": "Generated backend/auth.py",
+      "time": "2026-07-19T21:18:14.210903"
+    },
+    {
+      "change": "Generated backend/products.py",
+      "time": "2026-07-19T21:18:14.215325"
+    },
+    {
+      "change": "Generated backend/service.py",
+      "time": "2026-07-19T21:18:14.217451"
+    },
+    {
+      "change": "Generated backend/cart.py",
+      "time": "2026-07-19T21:18:14.219419"
+    },
+    {
+      "change": "Generated backend/payment.py",
+      "time": "2026-07-19T21:18:14.221288"
+    }
+  ]
+}
