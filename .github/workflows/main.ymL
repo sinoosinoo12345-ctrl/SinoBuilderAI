@@ -26,13 +26,17 @@ jobs:
           flutter-version: '3.35.0'
 
       - name: Install dependencies
-        run: flutter pub get
+  working-directory: sino_builder_app
+  run: flutter pub get
 
-      - name: Build APK
-        run: flutter build apk --release
+- name: Build APK
+  working-directory: sino_builder_app
+  run: flutter build apk --release
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
+- name: Upload APK
+  uses: actions/upload-artifact@v4
+  with:
+    name: SinoBuilderAI-APK
+    path: sino_builder_app/build/app/outputs/flutter-apk/app-release.apk
           name: SinoBuilderAI-APK
           path: build/app/outputs/flutter-apk/app-release.apk
