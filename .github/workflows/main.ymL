@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: sino_builder_app
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,17 +30,13 @@ jobs:
           flutter-version: '3.35.0'
 
       - name: Install dependencies
-  working-directory: sino_builder_app
-  run: flutter pub get
+        run: flutter pub get
 
-- name: Build APK
-  working-directory: sino_builder_app
-  run: flutter build apk --release
+      - name: Build APK
+        run: flutter build apk --release
 
-- name: Upload APK
-  uses: actions/upload-artifact@v4
-  with:
-    name: SinoBuilderAI-APK
-    path: sino_builder_app/build/app/outputs/flutter-apk/app-release.apk
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
           name: SinoBuilderAI-APK
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: sino_builder_app/build/app/outputs/flutter-apk/app-release.apk
