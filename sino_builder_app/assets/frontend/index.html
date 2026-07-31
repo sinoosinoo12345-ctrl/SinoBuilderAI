@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Sino Builder AI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#020617;
+
+color:white;
+
+overflow:hidden;
+
+}
+
+header{
+
+height:70px;
+
+background:#0f172a;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:26px;
+
+font-weight:bold;
+
+box-shadow:0 0 20px cyan;
+
+}
+
+.page{
+
+display:none;
+
+padding:20px;
+
+height:calc(100vh - 140px);
+
+overflow:auto;
+
+}
+
+.active{
+
+display:block;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.card{
+
+background:#1e293b;
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 0 15px rgba(0,255,255,.25);
+
+}
+
+.card:hover{
+
+transform:scale(1.05);
+
+}
+
+input,textarea{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+background:#111827;
+
+border:none;
+
+border-radius:12px;
+
+color:white;
+
+}
+
+textarea{
+
+height:160px;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:#06b6d4;
+
+color:white;
+
+font-size:20px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+pre{
+
+margin-top:15px;
+
+background:#111827;
+
+padding:15px;
+
+border-radius:12px;
+
+height:220px;
+
+overflow:auto;
+
+white-space:pre-wrap;
+
+}
+
+.bottom{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+height:70px;
+
+background:#0f172a;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+box-shadow:0 0 20px cyan;
+
+}
+
+.nav{
+
+text-align:center;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+🐉 Sino Builder AI
+
+</header>
+
+<div id="home" class="page active">
+
+<div class="grid">
+
+<div class="card">🤖<br>Sino AI</div>
+
+<div class="card" onclick="show('build')">⚡<br>Build</div>
+
+<div class="card">📂<br>Projects</div>
+
+<div class="card">🧠<br>Agents</div>
+
+<div class="card">📜<br>Logs</div>
+
+<div class="card">⚙️<br>Settings</div>
+
+</div>
+
+</div>
+
+<div id="build" class="page">
+
+<h2>🚀 Build Project</h2>
+
+<input id="project" placeholder="اسم المشروع">
+
+<textarea id="idea" placeholder="وصف المشروع"></textarea>
+
+<button onclick="buildProject()">
+
+🚀 Build Project
+
+</button>
+
+<pre id="log">
+
+جاهز...
+
+</pre>
+
+</div>
+<div class="bottom">
+
+<div class="nav" onclick="show('home')">
+🏠<br>Home
+</div>
+
+<div class="nav" onclick="show('build')">
+⚡<br>Build
+</div>
+
+<div class="nav">
+🤖<br>Sino
+</div>
+
+<div class="nav">
+📂<br>Projects
+</div>
+
+<div class="nav">
+⚙️<br>Settings
+</div>
+
+</div>
+
+<script>
+
+function show(id){
+
+document.querySelectorAll(".page").forEach(function(p){
+
+p.classList.remove("active");
+
+});
+
+const page=document.getElementById(id);
+
+if(page){
+
+page.classList.add("active");
+
+}
+
+}
+
+async function buildProject(){
+
+const project=document.getElementById("project").value.trim();
+
+const idea=document.getElementById("idea").value.trim();
+
+const log=document.getElementById("log");
+
+if(project===""||idea===""){
+
+alert("املأ جميع الحقول");
+
+return;
+
+}
+
+log.textContent="🚀 بدء البناء...";
+
+try{
+
+const response=await fetch("http://127.0.0.1:8000/build",{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify({
+
+project_name:project,
+
+requirements:idea
+
+})
+
+});
+
+const result=await response.json();
+
+log.textContent=JSON.stringify(result,null,2);
+
+}catch(err){
+
+log.textContent="❌ خطأ:\n\n"+err;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
