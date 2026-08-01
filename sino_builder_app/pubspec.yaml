@@ -59,9 +59,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - ../frontend/
-    - ../frontend/assets/
-    - ../frontend/src/
+    - assets/frontend/
+    - assets/frontend/assets/
+    - assets/frontend/src/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
