@@ -43,3 +43,15 @@ jobs:
         with:
           name: SinoBuilderAI-APK
           path: sino_builder_app/build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Create Build Info
+        run: |
+          mkdir -p release
+          echo "BUILD_STATUS=SUCCESS" > release/build.env
+          echo "APK_PATH=build/app/outputs/flutter-apk/app-release.apk" >> release/build.env
+
+      - name: Upload Build Info
+        uses: actions/upload-artifact@v4
+        with:
+          name: BuildInfo
+          path: sino_builder_app/release/build.env

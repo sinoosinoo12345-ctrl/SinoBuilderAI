@@ -34,8 +34,8 @@ def build(request: BuildRequest):
     engine = ExecutionEngine()
 
     result = engine.execute(
-        project=request.project_name,
-        description=request.requirements
+        request.project_name,
+        request.requirements
     )
 
     return result

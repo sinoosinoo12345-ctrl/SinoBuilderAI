@@ -1,4 +1,5 @@
 from builder.code_generator import CodeGenerator
+from release.release_pipeline import ReleasePipeline
 
 
 class ReleaseAgent:
@@ -7,7 +8,15 @@ class ReleaseAgent:
 
         generator = CodeGenerator(project_path)
 
+        pipeline = ReleasePipeline()
+
+        release = pipeline.create_release(
+            project_path,
+            task.get("project_name", "SinoProject"),
+        )
+
         return {
-            "status": "Release Ready",
+            "status": "Cloud Release Ready",
             "generated": generator.summary(),
+            "release": release,
         }
