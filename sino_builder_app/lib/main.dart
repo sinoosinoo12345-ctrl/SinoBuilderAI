@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+
+import 'pages/home_page.dart';
+import 'pages/build_page.dart';
+import 'pages/sino_page.dart';
+import 'pages/projects_page.dart';
+import 'pages/settings_page.dart';
 
 void main() {
   runApp(const SinoBuilderAI());
@@ -10,37 +15,87 @@ class SinoBuilderAI extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SinoHome(),
+      title: "Sino Builder AI",
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color(0xff0f172a),
+        useMaterial3: true,
+      ),
+      home: const MainScreen(),
     );
   }
 }
 
-class SinoHome extends StatefulWidget {
-  const SinoHome({super.key});
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  State<SinoHome> createState() => _SinoHomeState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _SinoHomeState extends State<SinoHome> {
-  late final WebViewController controller;
+class _MainScreenState extends State<MainScreen> {
 
-  @override
-  void initState() {
-    super.initState();
+  int currentIndex = 0;
 
-    controller = WebViewController()
-      ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadFlutterAsset('assets/frontend/index.html');
-  }
+  final pages = const [
+    HomePage(),
+    BuildPage(),
+    SinoPage(),
+    ProjectsPage(),
+    SettingsPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      body: SafeArea(
-        child: WebViewWidget(controller: controller),
+
+      body: pages[currentIndex],
+
+      bottomNavigationBar: NavigationBar(
+
+        selectedIndex: currentIndex,
+
+        onDestinationSelected: (index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
+
+        destinations: const [
+
+          NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home),
+            label: "Home",
+          ),
+
+          NavigationDestination(
+            icon: Icon(Icons.rocket_launch_outlined),
+            selectedIcon: Icon(Icons.rocket_launch),
+            label: "Build",
+          ),
+
+          NavigationDestination(
+            icon: Icon(Icons.smart_toy_outlined),
+            selectedIcon: Icon(Icons.smart_toy),
+            label: "Sino",
+          ),
+
+          NavigationDestination(
+            icon: Icon(Icons.folder_outlined),
+            selectedIcon: Icon(Icons.folder),
+            label: "Projects",
+          ),
+
+          NavigationDestination(
+            icon: Icon(Icons.settings_outlined),
+            selectedIcon: Icon(Icons.settings),
+            label: "Settings",
+          ),
+
+        ],
       ),
     );
   }
