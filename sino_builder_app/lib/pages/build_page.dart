@@ -29,7 +29,7 @@ class _BuildPageState extends State<BuildPage> {
 
     try {
       final response = await http.post(
-        Uri.parse("http://127.0.0.1:8000/build"),
+        Uri.parse("http://192.168.1.112:8000/build"),
         headers: {
           "Content-Type": "application/json",
         },
