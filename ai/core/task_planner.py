@@ -8,21 +8,51 @@ class TaskPlanner:
         return [
 
             {
+                "agent": "Planner",
+                "type": "planning",
+                "target": "Project Planning",
+            },
+
+            {
+                "agent": "Architect",
+                "type": "architecture",
+                "target": "System Architecture",
+            },
+
+            {
+                "agent": "UIDesigner",
+                "type": "ui",
+                "target": "Modern UI/UX",
+            },
+
+            {
+                "agent": "Backend",
+                "type": "backend",
+                "target": "Backend API",
+            },
+
+            {
+                "agent": "Database",
+                "type": "database",
+                "target": "Database",
+            },
+
+            {
                 "agent": "AI",
                 "type": "project",
-                "target": "Full Project"
+                "target": "Full Project",
             },
 
             {
                 "agent": "Cyber",
                 "type": "security",
-                "target": "Full Scan"
+                "target": "Security Scan",
             },
 
             {
                 "agent": "Release",
                 "type": "release",
-                "target": "Flutter Build"
+                "target": "Flutter Release",
             },
 
         ]

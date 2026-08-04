@@ -24,7 +24,7 @@ class BuildRequest(BaseModel):
 def root():
     return {
         "status": "running",
-        "engine": "Sino Builder AI"
+        "engine": "Sino Builder AI",
     }
 
 
@@ -33,12 +33,26 @@ def build(request: BuildRequest):
 
     engine = ExecutionEngine()
 
-    result = engine.execute(
-        request.project_name,
-        request.requirements
-    )
+    try:
+        result = engine.execute(
+            request.project_name,
+            request.requirements,
+        )
 
-    return result
+        return {
+            "success": True,
+            "project": request.project_name,
+            "message": "Project generated successfully",
+            "result": result,
+        }
+
+    except Exception as e:
+
+        return {
+            "success": False,
+            "project": request.project_name,
+            "error": str(e),
+        }
 
 
 @app.get("/projects")
@@ -51,8 +65,10 @@ def projects():
     if not workspace.exists():
         return []
 
-    return sorted([
-        p.name
-        for p in workspace.iterdir()
-        if p.is_dir()
-    ])
+    return sorted(
+        [
+            p.name
+            for p in workspace.iterdir()
+            if p.is_dir()
+        ]
+    )
